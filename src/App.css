@@ -1,0 +1,107 @@
+/* .App is the main container for the app.
+   We're making it a flex container with column direction to allow its children 
+   (different components of the app) to stack vertically. 
+   Center alignment in both horizontal and vertical direction is set for its children.
+   It takes up the full height of the viewport (100vh). */
+   .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+  
+  /* Root is the main div where the React app is mounted. 
+     It has its own styles which include a different background color, width and margin for centering, padding, 
+     and text color.*/
+  #root {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 0;
+    color: #ffffff;
+  }
+  
+  /* The body rule is applied to the whole HTML body. 
+     Here, it's used to reset default margin and padding, and set background and text color.*/
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* The h1 and h2 rules apply to first and second level headings. 
+     They set font size, color, and bottom margin.*/
+  h1, h2 {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2em;
+    text-transform: uppercase; /* added this line */
+    letter-spacing: 0.1em; /* Adjust this value to increase/decrease spacing */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  /* The p rule applies to paragraphs, setting color and top margin. */
+  p {
+    color: #ffffff;
+    margin-top: 0;
+  }
+  
+  /* The a, a:link, a:visited rules apply to all states of anchor links, setting font size, color, and text-decoration.*/
+  a, a:link, a:visited {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d00000;
+    text-decoration: none;
+  }
+  
+  /* The a:hover, a:active, a:focus rules apply to anchor links when hovered, activated, or focused.*/
+  a:hover, a:active, a:focus {
+    color: #d9ff00;
+  }
+  
+  /* The form input and form input:focus rules style all input fields in forms, including width, padding, 
+     and an outline when focused.*/
+  form input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+  }
+  
+  form input:focus {
+    outline: 1px solid #000000;
+  }
+  
+  /* The ul rule styles all unordered lists, removing the default list-style-type.*/
+  ul {
+    list-style-type: none;
+  }
+  
+  .story-details {
+    text-align: center;
+}
+
+/* This rule adds some top margin to the div containing the message 
+   "Select A Story To See The Details", nudging it down */
+   .select-story-message {
+    margin-top: 20px;
+    font-weight: bold;
+}

@@ -23,7 +23,7 @@ const StoryContainer = () => {
 
     return (
         <>
-        <h1>Top Stories:</h1>
+        <h1>Top Hacker Stories</h1>
         <StorySelect stories={stories} handleSelectChange={handleSelectChange} />
         <StoryDetail selectedStory={selectedStory} />
         </>
