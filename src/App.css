@@ -14,12 +14,12 @@
     background-color: #000000;
     font-family: 'Arial', sans-serif;
   }
-
+  
   .logo {
     width: 150px;
     height: auto;
     margin-bottom: 20px;
-}
+  }
   
   /* Root is the main div where the React app is mounted. 
      It has its own styles which include a different background color, width and margin for centering, padding, 
@@ -27,8 +27,6 @@
   #root {
     width: 75%;
     margin: 0 auto;
-    margin-top: auto;
-    margin-bottom: auto;
     padding: 10px 0;
     color: #ffffff;
   }
@@ -36,7 +34,7 @@
   /* The body rule is applied to the whole HTML body. 
      Here, it's used to reset default margin and padding, and set background and text color.*/
   body {
-    background: #fff;
+    background: #000000; /* Change background color to black */
     margin: 0;
     padding: 0;
   }
@@ -97,11 +95,44 @@
   
   .story-details {
     text-align: center;
-}
-
-/* This rule adds some top margin to the div containing the message 
-   "Select A Story To See The Details", nudging it down */
-   .select-story-message {
+  }
+  
+  /* This rule adds some top margin to the div containing the message 
+     "Select A Story To See The Details", nudging it down */
+  .select-story-message {
     margin-top: 20px;
     font-weight: bold;
+  }
+  
+  /* Update the hover color for the select element */
+select:hover {
+  color: #d00000; /* Change hover color to red */
+}
+
+/* Style the dropdown select element */
+select {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+/* Style the dropdown options */
+select option {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Style the dropdown when it is open */
+select:focus {
+  outline: none;
+  background-color: #f5f5f5;
+  color: #333333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
